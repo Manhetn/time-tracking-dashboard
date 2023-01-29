@@ -1,0 +1,110 @@
+@import url(../variables.css);
+
+.tracking-card {
+  width: 100%;
+  background-color: white;
+  border-radius: var(--b-rdius);
+  padding-top: 2.2rem;
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-position: 92% -6%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tracking-card--work {
+  background-color: var(--red-light);
+  background-image: url(../../assets/icons/icon-work.svg);
+}
+.tracking-card--play {
+  background-color: var(--blue-soft);
+  background-image: url(../../assets/icons/icon-play.svg);
+}
+.tracking-card--study {
+  background-color: var(--red-middle);
+  background-image: url(../../assets/icons/icon-study.svg);
+}
+.tracking-card--exercise {
+  background-color: var(--green-lime);
+  background-image: url(../../assets/icons/icon-exercise.svg);
+}
+.tracking-card--social {
+  background-color: var(--violet);
+  background-image: url(../../assets/icons/icon-social.svg);
+}
+.tracking-card--self-care {
+  background-color: var(--orange-soft);
+  background-image: url(../../assets/icons/icon-self-care.svg);
+}
+
+.tracking-card__contant {
+  flex-grow: 1;
+  background-color: var(--blue-dark);
+  border-radius: var(--b-rdius);
+  padding: 1.25rem;
+  position: relative;
+  bottom: -2px;
+}
+
+.tracking-card__contant:hover {
+  cursor: pointer;
+  background-color: var(--blue-desaturated);
+}
+
+.tracking-card__header,
+.tracking-card__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tracking-card__header {
+  /* margin-bottom: 1.5rem; */
+}
+
+.tracking-card__title {
+  font-weight: var(--weigth-normal);
+  margin: 0 0 0.5rem;
+}
+
+.tracking-card__button {
+  cursor: pointer;
+}
+
+.tracking-card__time {
+  font-size: 32px;
+  font-weight: var(--weigth-light);
+}
+
+.tracking-card__prev-period {
+  font-size: 12px;
+  font-weight: var(--weigth-light);
+  color: var(--blue-pale);
+}
+
+@media (min-width: 1024px) {
+  .tracking-card__header {
+    margin-bottom: 1.5rem;
+  }
+
+  .tracking-card__title {
+    margin: 0;
+  }
+
+  .tracking-card__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tracking-card__body {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .tracking-card__time {
+    font-size: 48px;
+  }
+}

@@ -1,0 +1,7 @@
+@import url(../../vendor/normalize.css);
+@import url(../../styles/global.css);
+@import url(../../styles/bloks/dashboard.css);
+@import url(../../styles/bloks/user-info.css);
+@import url(../../styles/bloks/view-selector.css);
+@import url(../../styles/bloks/tracking-card.css);
+@import url(../../styles/bloks/preloader.css);

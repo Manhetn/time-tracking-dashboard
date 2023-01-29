@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%=require('../../assets/images/favicons/favicon-32x32.png')%>"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body class="body">
+    <section class="dashboard">
+      <div class="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="dashboard__content dashboard__content--hidden">
+        <div class="dashboard__user-panel">
+          <div class="user-info">
+            <img class="user-info__photo" src="" alt="User photo" />
+            <div class="user-info__data">
+              <h2 class="user-info__subtitle">Report for</h2>
+              <h3 class="user-info__title"></h3>
+            </div>
+          </div>
+          <div class="view-selector">
+            <ul class="view-selector__list">
+              <li class="view-selector__list-item">
+                <input
+                  class="view-selector__type-view-input"
+                  type="radio"
+                  name="type-view"
+                  id="daily"
+                  value="daily"
+                />
+                <label class="view-selector__type-view-label" for="daily"
+                  >Daily
+                </label>
+              </li>
+              <li class="view-selector__list-item">
+                <input
+                  class="view-selector__type-view-input"
+                  type="radio"
+                  name="type-view"
+                  id="weekly"
+                  value="weekly"
+                  checked="checked"
+                />
+                <label class="view-selector__type-view-label" for="weekly"
+                  >Weekly
+                </label>
+              </li>
+              <li class="view-selector__list-item">
+                <input
+                  class="view-selector__type-view-input"
+                  type="radio"
+                  name="type-view"
+                  id="monthly"
+                  value="monthly"
+                />
+                <label class="view-selector__type-view-label" for="monthly"
+                  >Monthly
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dashboard__tracking-cards"></div>
+      </div>
+    </section>
+  </body>
+</html>

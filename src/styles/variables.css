@@ -1,0 +1,33 @@
+@import url(../vendor/fonts.css);
+
+:root {
+  /* color */
+  --white: hsl(0, 0%, 100%);
+  /* 100 */
+  --blue-soft: hsl(195, 74%, 62%);
+  --blue-pale: hsl(236, 100%, 87%);
+  --blue-desaturated: hsl(235, 45%, 61%);
+  --blue: hsl(246, 80%, 60%);
+  --blue-dark: hsl(235, 46%, 20%);
+  --blue-very-dark: hsl(226, 43%, 10%);
+  /* 900 */
+
+  --red-light: hsl(15, 100%, 70%);
+  --red-middle: hsl(348, 100%, 68%);
+
+  --green-lime: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --orange-soft: hsl(43, 84%, 65%);
+
+  /* typography */
+  --family: 'Rubik', sans-serif;
+  --fs-base: 18px;
+  --fs-small: 12px;
+  --weigth-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+
+  /* border */
+  --b-rdius: 1rem;
+  --b-rdius-full: 50%;
+}

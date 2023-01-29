@@ -1,0 +1,43 @@
+@import url(../variables.css);
+
+.view-selector {
+  padding: 1.25rem 2rem;
+}
+
+.view-selector__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-selector__list-item {
+  font-size: var(--fs-small);
+  color: var(--blue-pale);
+  cursor: pointer;
+}
+
+.view-selector__type-view-label:hover {
+  color: var(--white);
+}
+
+.view-selector__type-view-input[checked='checked']
+  ~ .view-selector__type-view-label {
+  color: var(--white);
+}
+
+.view-selector__type-view-label {
+  cursor: pointer;
+}
+
+.view-selector__type-view-input {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .view-selector__list {
+    flex-direction: column;
+  }
+
+  .view-selector__list-item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

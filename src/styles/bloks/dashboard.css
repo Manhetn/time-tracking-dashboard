@@ -1,0 +1,51 @@
+@import url(../variables.css);
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem 0.5rem;
+}
+
+.dashboard__content {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.dashboard__content--hidden {
+  display: none;
+}
+
+.dashboard__user-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--blue-dark);
+  border-radius: var(--b-rdius);
+}
+
+.dashboard__tracking-cards {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  grid-template-columns: repeat(1, minmax(300px, 330px));
+}
+
+@media (min-width: 1024px) {
+  .dashboard__content {
+    grid-template-columns: 1fr 3.25fr;
+  }
+
+  .dashboard__user-panel {
+    max-width: 207px;
+  }
+
+  .dashboard__tracking-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
