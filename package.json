@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "Easy project using HTML, CSS, vanilla JS",
   "main": "src/pages/main/index.js",
+  "homepage": "https://Manhetn.github.io/time-tracking-dashboard",
   "scripts": {
     "build": "rimraf dist && webpack --mode production",
     "dev": "rimraf dist && webpack --mode development",
-    "serve": "webpack serve --open --mode development"
+    "serve": "webpack serve --open --mode development",
+    "deploy": "npm run build && gh-pages -d dist"
   },
-  "keywords": ["HTML", "CSS", "JavaScript"],
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -22,6 +28,7 @@
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-prettier": "4.2.1",
     "filemanager-webpack-plugin": "8.0.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "5.5.0",
     "image-webpack-loader": "8.1.0",
     "mini-css-extract-plugin": "2.7.2",
