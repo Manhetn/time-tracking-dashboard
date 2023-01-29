@@ -10,6 +10,10 @@ project taken from https://www.frontendmentor.io
 
 **Description:_** Easy project using HTML, CSS, vanilla JS
 
+# Demo:
+
+https://Manhetn.github.io/time-tracking-dashboard
+
 # Installation:
 _node.js and npm must be installed to work with the project_
 
