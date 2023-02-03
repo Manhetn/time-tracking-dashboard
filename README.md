@@ -1,4 +1,4 @@
-# NewsExplorer
+# TimeTrackingDashboard
 
 project taken from https://www.frontendmentor.io
 
